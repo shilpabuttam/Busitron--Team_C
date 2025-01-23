@@ -1,4 +1,4 @@
-// server/controllers/activityController.js
+
 const UserActivity = require('../models/userActivity');
 
 exports.logActivity = async (req, res) => {

@@ -1,4 +1,4 @@
-// client/src/components/LikeButton.js
+
 import React, { useState } from 'react';
 import { Button } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -9,8 +9,8 @@ const LikeButton = ({ videoId, userId }) => {
 
   const handleLikeToggle = () => {
     const activityType = liked ? 'unlike' : 'like';
-    logActivity(userId, videoId, activityType); // Log the activity
-    setLiked(!liked); // Toggle the liked state
+    logActivity(userId, videoId, activityType); 
+    setLiked(!liked); 
   };
 
   return (
@@ -19,6 +19,7 @@ const LikeButton = ({ videoId, userId }) => {
       onClick={handleLikeToggle}
       startIcon={<FavoriteIcon />}
       sx={{
+        marginTop:'2px',
         backgroundColor: liked ? 'red' : 'primary.main',
         color: 'white',
         '&:hover': {

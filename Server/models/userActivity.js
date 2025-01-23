@@ -1,4 +1,4 @@
-// server/models/UserActivity.js
+
 const mongoose = require('mongoose');
 
 const UserActivitySchema = new mongoose.Schema({
@@ -6,7 +6,7 @@ const UserActivitySchema = new mongoose.Schema({
   videoId: { type: String, required: true },
   activityType: { type: String, enum: ['view', 'like', 'share', 'comment', 'purchase'], required: true },
   timestamp: { type: Date, default: Date.now },
-  additionalData: { type: Object },  // Extra data like comment text or purchase details
+  additionalData: { type: Object }, 
 });
 
 module.exports = mongoose.model('UserActivity', UserActivitySchema);

@@ -1,4 +1,4 @@
-// client/src/services/activityService.js
+
 const API_URL = 'http://localhost:5000/api/activities/log';
 
 export const logActivity = async (userId, videoId, activityType, additionalData = {}) => {
