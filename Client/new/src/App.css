@@ -1,0 +1,46 @@
+.container1 {
+  border: 2px solid black;
+  height: 300px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  text-align: center;
+  padding-top: 40px;
+  background-color: #003161;
+  color:white;
+  border: none;
+  border-radius: 10px;
+}
+
+.label1 {
+  font-size: large;
+  justify-content: space-around;
+  
+}
+.secondDiv{
+  display:flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.lastDiv{
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 330px;
+  display: flex;
+ justify-content: space-between;
+}
+.upper{
+  height:40px;
+  width:40px;
+  border-radius: 50%;
+  margin-top: -60px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+  background-color:#A64D79;
+  
+}
+body{
+  background-color: #000B58;
+}
