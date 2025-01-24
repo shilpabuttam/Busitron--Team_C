@@ -1,0 +1,99 @@
+/* NotificationPanel.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Notification Panel Container */
+.notification-panel {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* Notifications List */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Notification Item */
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Message Text */
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Date & Time */
+small {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Error Message */
+p.error {
+    color: #f44336;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* No Notifications Message */
+p.no-notifications {
+    text-align: center;
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .notification-panel {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    small {
+        font-size: 11px;
+    }
+}

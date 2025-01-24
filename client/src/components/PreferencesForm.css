@@ -1,0 +1,146 @@
+/* PreferencesForm.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container for the form */
+.preferences-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* Form Group (labels and inputs) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="email"] {
+    height: 40px;
+}
+
+/* Dropdown Styling */
+select {
+    height: 40px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Response Message Styling */
+p {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Placeholder Text */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .preferences-form {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .preferences-form {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input,
+    select {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
