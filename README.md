@@ -1,8 +1,3 @@
-Certainly! Here's a **README.md** template that you can use for your project. It’s structured to provide key information about the project, installation instructions, usage, and any other important details.
-
-### **README.md Template**
-
-```markdown
 # Notification System Project
 
 This is a simple **Notification System** built using **React.js** for the frontend, **Node.js/Express** for the backend, and **MongoDB** for storing user preferences and notifications. The project allows users to set notification preferences and receive notifications via in-app messages or email based on their preferences.
