@@ -1,24 +1,30 @@
-// server.js (Backend)
 const express = require('express');
+const mongoose = require('mongoose');
 const cors = require('cors');
+const dotenv = require('dotenv');
+const videoRoutes = require('./routes/videoRoutes');
+
+dotenv.config();
 const app = express();
-const port = 5000; // You can change this to any port you prefer
 
-// Enable Cross-Origin Resource Sharing
+// Middleware
 app.use(cors());
+app.use(express.json());
 
-// Sample data to mimic fetching video data (e.g., from a database)
-const videos = [
-  { id: "12345", title: "Sample Video 1", description: "A sample video description." },
-  { id: "67890", title: "Sample Video 2", description: "Another sample video description." }
-];
-
-// Route to get video data
-app.get('/api/videos', (req, res) => {
-  res.json(videos);
+// MongoDB connection
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => {
+  console.log("database Connected");
+}).catch((err) => {
+  console.error('Db error',err);
 });
 
-// Server
+// Routes
+app.use('/api/videos', videoRoutes);
+
+const port = 5000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

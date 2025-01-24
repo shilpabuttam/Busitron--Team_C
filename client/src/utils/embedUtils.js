@@ -1,13 +1,9 @@
-// src/utils/embedUtils.js
-const generateEmbedCode = (videoId, options) => {
-  const baseUrl = "https://your-platform.com/embed";  // Replace with your actual platform URL
-  const params = new URLSearchParams({
-    quality: options.quality || "720p",  // Default to 720p if no quality is specified
-    autoplay: options.autoplay || false, // Default to autoplay = false
-  }).toString();
+const generateEmbedCode = (videoUrl, options) => {
+  const autoplayParam = options.autoplay ? 1 : 0;  // 1 for autoplay, 0 for no autoplay
+  const qualityParam = options.quality || "1080p";  // Default to 1080p
 
   return `<iframe 
-    src="${baseUrl}/${videoId}?${params}" 
+    src="${videoUrl}?autoplay=${autoplayParam}" 
     frameborder="0" 
     allow="autoplay; encrypted-media" 
     allowfullscreen 
