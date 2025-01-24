@@ -1,0 +1,68 @@
+ .navbar{
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 20px;
+  background-color: darkgrey;
+  font-style: italic;
+  background-attachment: fixed;
+ }
+
+
+ .nav-btn{
+  
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 30px;
+  margin-left: 5px;
+  
+
+ }
+ .nav-buttons button:hover {
+  background-color: grey;
+}
+.btn-prev{
+  font-size: 20px;
+}
+.btn-nxt{
+  font-size:20px
+}
+
+.heading {
+  margin-top: 0px;
+  margin-left: 5px;
+  
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+ border: 2px solid black;
+ border-radius: 20px;
+ width:400px ;
+  height:fit-content;
+  
+}
+.fig{
+  margin: 0;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 200px;
+}
+.img{
+  height: 100%;;
+  width: 100%;
+}
+.btn-more{
+  
+ padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
