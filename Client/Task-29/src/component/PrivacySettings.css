@@ -1,0 +1,170 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+
+    padding: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+    color: #000000;
+
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    border-bottom: 2px solid #000000;
+
+    padding-bottom: 10px;
+}
+
+.card {
+    background: #f9f9f9;
+
+    border: 1px solid #000000;
+
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.subheading {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #333333;
+
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+
+    border-radius: 6px;
+    font-size: 16px;
+    background: #ffffff;
+
+    color: #000000;
+
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.dropdown:focus {
+    border-color: #000000;
+
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.switch-label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch-label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.switch-label input:checked+.switch-slider {
+    background-color: #000000;
+
+}
+
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #ffffff;
+
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+.switch-label input:checked+.switch-slider:before {
+    transform: translateX(26px);
+}
+
+.save-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+
+    color: #ffffff;
+
+    border: 1px solid #000000;
+
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+.save-button:hover {
+
+    color: #000000;
+
+    transform: scale(1.05);
+
+}
+
+.save-button:active {
+    transform: scale(0.98);
+
+}
