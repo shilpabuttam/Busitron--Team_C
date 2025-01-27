@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBomma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .movie-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+        .movie-card h3 {
+            padding: 0.5rem;
+        }
+        .movie-card p {
+            padding: 0 0.5rem 1rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>iBomma - Watch Your Favorite Movies</h1>
+    </header>
+    <main>
+        <section class="movie-grid">
+            <div class="movie-card">
+                <img src="atrena - Copy.jpeg" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <p>Short description of the movie.</p>
+            </div>
+            <div class="movie-card">
+                <img src="gammi.jpeg" alt="Movie 2">
+                <h3>Movie Title 2</h3>
+                <p>Short description of the movie.</p>
+            </div>
+            <div class="movie-card">
+                <img src="kotabommali - Copy.jpeg" alt="Movie 3">
+                <h3>Movie Title 3</h3>
+                <p>Short description of the movie.</p>
+            </div>
+            <div class="movie-card">
+                <img src="mangio.jpeg" alt="Movie 4">
+                <h3>Movie Title 4</h3>
+                <p>Short description of the movie.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
