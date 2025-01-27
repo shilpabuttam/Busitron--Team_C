@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  border-radius: 15px;
+  padding-bottom: 10px;
+  border: 4px solid orangered;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+ 
+  
+}
+.heading{
+  color: white;
+
+}
+.comment-form,
+.reply-form {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.comment-form input,
+.reply-form input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.comment-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 4px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+
+.reply {
+  margin-left: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #ddd;
+}
+.replyButton{
+  border-radius: 10px;
+  background-color: orangered;
+}
+.postButton{
+  border-radius: 10px;
+  background-color:green;
+}
+
+.videoSource{
+  border-radius: 8px;
+  width:60%;
+  margin-left: 170px;
+  margin-top: 10px;
+}
