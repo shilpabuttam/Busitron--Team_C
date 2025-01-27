@@ -1,0 +1,235 @@
+/* Styles for the Navbar */
+nav {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Styles for the Home page */
+.home {
+  background-image: url(bg.jpg); /* Path relative to public folder */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* To stack the button vertically with the text */
+  color: white;
+  text-align: center; /* Center text */
+}
+
+.explore-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Styles for the Movie Page */
+.movie-page {
+  padding: 20px;
+}
+
+.movie-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid with min width of 250px */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.movie-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.movie-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #777;
+}
+
+/* Watch Button */
+.watch-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  .movie-cards-container {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+}
+
+
+/* Categories Section */
+.categories {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categories h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.category-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #0056b3;
+}
+
+.category-button.active {
+  background-color: #ff5733;
+}
+
+/* Movie Page Styles */
+.movie-page {
+  padding: 20px;
+}
+
+.movie-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.movie-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.movie-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #777;
+}
+
+/* Watch Button */
+.watch-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .movie-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+  }
+}
