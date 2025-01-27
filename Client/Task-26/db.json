@@ -1,0 +1,42 @@
+{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "match": {
+                        "genre": "Comedy"
+                    }
+                },
+                {
+                    "match": {
+                        "language": "English"
+                    }
+                },
+                {
+                    "range": {
+                        "duration": {
+                            "gte": 4,
+                            "lte": 10
+                        }
+                    }
+                }
+            ],
+            "filter": [
+                {
+                    "range": {
+                        "releaseDate": {
+                            "gte": "2023-01-01"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "sort": [
+        {
+            "popularity": {
+                "order": "desc"
+            }
+        }
+    ]
+}

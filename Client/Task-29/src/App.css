@@ -1,0 +1,265 @@
+/* Basic CSS for visibility settings */
+.visibility-settings {
+  font-family: Arial, sans-serif;
+}
+
+.visibility-dropdown,
+.custom-visibility-selector {
+  margin-bottom: 20px;
+}
+
+.custom-visibility-selector ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-visibility-selector li {
+  margin: 5px 0;
+}
+
+.current-visibility p {
+  font-weight: bold;
+}
+
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+select {
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+h2,
+h3 {
+  color: #333;
+}
+
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+select {
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.comment {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f1f1f1;
+}
+
+.reported-comment {
+  padding: 10px;
+  margin: 5px;
+  background-color: #ffcccc;
+  color: red;
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+h2,
+h3 {
+  color: #333;
+}
+
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+h2,
+h3,
+h4 {
+  color: #333;
+}
+
+/* Styles for notifications */
+.notification {
+  padding: 10px;
+  margin: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.alert {
+  padding: 15px;
+  background-color: #ffcccc;
+  color: #d9534f;
+  border-radius: 5px;
+  border: 1px solid #d9534f;
+  margin: 10px 0;
+}
+
+/* App.css */
+.privacy-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.privacy-setting {
+  margin-bottom: 20px;
+}
+
+.privacy-setting h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+select {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.save-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+/* App.css */
+.data-management {
+  margin-top: 30px;
+}
+
+.data-management h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.data-management button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.export-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.export-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #FF6347;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #e55347;
+}
+
+button:disabled {
+  background-color: #f3f3f3;
+  cursor: not-allowed;
+}
+
+/* App.css */
+.data-management {
+  margin-top: 30px;
+}
+
+.data-management h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.data-management button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.export-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.export-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #FF6347;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #e55347;
+}
+
+button:disabled {
+  background-color: #f3f3f3;
+  cursor: not-allowed;
+}
