@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Line, Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import * as FileSaver from 'file-saver';
 import axios from 'axios';
 
-// Register all required Chart.js components
+// Ensure all required components are registered
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -18,18 +20,7 @@ ChartJS.register(
   Legend
 );
 
-const Card = ({ children }) => <div className="p-4 shadow-lg rounded-lg bg-white">{children}</div>;
-const CardContent = ({ children }) => <div>{children}</div>;
-const Button = ({ children, onClick }) => (
-  <button
-    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none"
-    onClick={onClick}
-  >
-    {children}
-  </button>
-);
-
-const App = () => {
+const Task = () => {
   const [metrics, setMetrics] = useState({});
   const [dateRange, setDateRange] = useState([null, null]);
   const [startDate, endDate] = dateRange;
@@ -63,9 +54,9 @@ const App = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold mb-6">Analytics Dashboard</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">Analytics Dashboard</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
         <Card>
           <CardContent>
             <h2 className="text-lg font-semibold">User Engagement</h2>
@@ -94,7 +85,7 @@ const App = () => {
           endDate={endDate}
           onChange={(update) => setDateRange(update)}
           isClearable
-          className="p-2 border rounded w-full"
+          className="p-2 border rounded"
         />
       </div>
 
@@ -147,4 +138,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Task;
