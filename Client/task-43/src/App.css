@@ -1,0 +1,92 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Make the body take full height */
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.payment-gateway-selection {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.payment-gateway-selection h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.payment-gateway-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.payment-gateway-button:hover {
+  background-color: #f0f0f0;
+}
+
+.payment-gateway-button.selected {
+  border-color: #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.payment-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.payment-container .StripePayment,
+.payment-container .PayPalPayment {
+  margin-top: 20px;
+}
+
+.payment-container .razorpay-button {
+  padding: 12px 25px;
+  background-color: #5468ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.payment-container .razorpay-button:hover {
+  background-color: #3f54d1;
+}
