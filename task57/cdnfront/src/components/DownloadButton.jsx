@@ -10,7 +10,6 @@ const handleDownload = () => {
 
     link.click();
 
-
     const downloadedVideos = JSON.parse(localStorage.getItem('offlineVideos')) || [];
     downloadedVideos.push({
       url: videoUrl,
@@ -29,3 +28,6 @@ const handleDownload = () => {
 };
 
 export default DownloadButton;
+
+
+
