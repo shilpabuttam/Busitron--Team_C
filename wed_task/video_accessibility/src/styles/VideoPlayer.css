@@ -1,0 +1,18 @@
+.video-container {
+    text-align: center;
+  }
+  
+  video {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+ 
