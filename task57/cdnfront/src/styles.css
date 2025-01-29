@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+  }
+  
+  .container {
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h3 {
+    color: #333;
+  }
+  
+  .video-container {
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+ 
+.video-container {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 10px;
+  }
+  
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+
+  select {
+    margin-top: 10px;
+  }
+  
+  h5 {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin:8px;
+    border-radius: 8px;
+  }
+  
+  .vid{
+    display: flex;
+  }
+
+  .qualitySection{
+    display: flex;
+    padding: 10px;
+  }
+
+
+.offline-videos-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .offline-videos-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+
+  .video-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+ 
+  video {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .video-card h5 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+
+.vidTitle{
+    padding-left: 10px;
+}
+.vidDesc{
+    padding: 0px 10px;
+}
+
+.mainTitle{
+    font-size: 40px;
+    text-align: center;
+    
+}
