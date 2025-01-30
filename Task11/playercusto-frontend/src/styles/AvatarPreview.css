@@ -1,0 +1,78 @@
+.avatar-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    margin-left: -270px;
+    top: 30px;
+}
+
+
+.avatar-base {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+}
+
+
+.clothing {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+
+.accessory {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 3; 
+}
+
+
+.hat {
+    top: 0px;
+    z-index: 4;
+}
+
+.glasses {
+    position: absolute;
+  margin-bottom: 1000px; 
+}
+
+.jacket {
+    top: 80px;
+    z-index: 2;
+}
+
+.final-avatar-container {
+    text-align: center;
+    margin-left: 400px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}

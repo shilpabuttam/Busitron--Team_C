@@ -1,0 +1,16 @@
+.app {
+    text-align: center;
+    background-color: orange;
+    margin: 70px;
+    border-radius: 10px;
+  }
+  
+  .customization-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .projTitle{
+    font-size: 40px;
+    padding: 10px ;
+  }
