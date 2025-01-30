@@ -4,21 +4,21 @@ import "../styles/AvatarCustomization.css";
 
 const AvatarCustomization = () => {
   const [avatarStyle, setAvatarStyle] = useState({
-    clothing: "", // Holds either a Shirt or Jacket
-    accessory: "", // Holds either a Hat or Glasses
+    clothing: "", 
+    accessory: "", 
   });
 
-  const [finalAvatar, setFinalAvatar] = useState(null); // Stores final selection
+  const [finalAvatar, setFinalAvatar] = useState(null); 
 
-  // Function to update only one clothing OR one accessory at a time
+ 
   const handleSelection = (type, image) => {
     setAvatarStyle((prev) => ({
       ...prev,
-      [type]: image, // Updates only the clicked type
+      [type]: image, 
     }));
   };
 
-  // Finalize selection on submit
+
   const handleSubmit = () => {
     setFinalAvatar({ ...avatarStyle });
   };
@@ -29,10 +29,10 @@ const AvatarCustomization = () => {
       <h2>Player Customization</h2>
       
 
-      {/* Left Side: Live Avatar Preview */}
+    
       <AvatarPreview avatarStyle={avatarStyle} />
 
-      {/* Selection Buttons */}
+  
       <div className="customization-buttons">
         <h3>Select Clothing</h3>
         <button onClick={() => handleSelection("clothing", "/assets/jacket1.png")}>Jacket 1</button>
@@ -46,14 +46,12 @@ const AvatarCustomization = () => {
         <button onClick={() => handleSelection("accessory", "/assets/glasses1.png")}>Glasses 1</button>
         <button onClick={() => handleSelection("accessory", "/assets/glasses2.png")}>Glasses 2</button>
 
-        {/* Submit Button */}
         <div>
         <button className="submit-button" onClick={handleSubmit}>Submit</button>
         </div>
         
       </div>
 
-      {/* Right Side: Final Avatar */}
       <div className="final-avatar-container">
         {finalAvatar && <AvatarPreview avatarStyle={finalAvatar} />}
       </div>
