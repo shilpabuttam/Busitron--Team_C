@@ -1,0 +1,60 @@
+.performance-reports {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .performance-reports h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .performance-reports div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .performance-reports div:last-child {
+    margin-bottom: 0;
+  }
+  
+  .performance-reports h3 {
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .performance-reports p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .performance-reports div:hover {
+    background-color: #e6f7ff;
+    cursor: pointer;
+  }
+  
+  .performance-reports .performance {
+    font-weight: bold;
+    color: #28a745;  /* Green color for excellent performance */
+  }
+  
+  .performance-reports .average-performance {
+    font-weight: bold;
+    color: #ffc107;  /* Yellow color for average performance */
+  }
+  
+  .performance-reports .poor-performance {
+    font-weight: bold;
+    color: #dc3545;  /* Red color for poor performance */
+  }
+  

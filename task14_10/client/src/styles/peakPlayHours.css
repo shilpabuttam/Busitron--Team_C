@@ -1,0 +1,50 @@
+.peak-play-hours {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .peak-play-hours h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .peak-play-hours div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .peak-play-hours div:last-child {
+    margin-bottom: 0;
+  }
+  
+  .peak-play-hours h3 {
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .peak-play-hours p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .peak-play-hours div:hover {
+    background-color: #e6f7ff;
+    cursor: pointer;
+  }
+  
+  .peak-play-hours .active-players {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
