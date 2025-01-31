@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Winter Festival",
+      "description": "A fun winter event with unique rewards!",
+      "startDate": "2025-01-01",
+      "endDate": "2025-01-31",
+      "rewards": "Exclusive Winter Skin"
+    },
+    {
+        "id": 2,
+        "name": "Spring Challenge",
+        "description": "A spring challenge event with awesome rewards!",
+        "startDate": "2025-01-31",
+        "endDate": "2025-02-02",
+        "rewards": "Exclusive Spring Skin"
+      }
+  ]
+  

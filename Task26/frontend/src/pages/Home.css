@@ -1,0 +1,91 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+.home {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.announcement-banner {
+    background-color: #fffae6;
+    border: 1px solid #ffe066;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.notification {
+    background-color: #fffae6;
+    border: 1px solid #ffe066;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+}
+.notify{
+    margin-left: 500px;
+}
+
+
+.event-card {
+    background-color: #83837e;
+    border: 3px solid #edeaea;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    background-color:rgb(219, 185, 185);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.join-btn {
+    background-color: brown;
+}
+
+.join-btn:hover {
+    background-color: #1e88e5;
+}
+.eventDetails{
+    width: 40%;
+   margin: 50px;
+}
+.typesOfEvents{
+    display: flex;
+    margin: 40px 220px;
+}
+.App{
+    background-color: rgb(5, 64, 96);
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.title{
+    color: white;
+    font-size: 35px;
+}
