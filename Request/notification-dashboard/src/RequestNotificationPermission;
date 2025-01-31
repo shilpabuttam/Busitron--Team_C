@@ -1,0 +1,50 @@
+import React, { useEffect } from "react";
+import { messaging } from "./firebase";
+import axios from 'axios';
+
+const sendNotification = async (userId, message, type) => {
+    try {
+        const response = await axios.post('http://localhost:5000/api/notifications/send', {
+            userId,
+            message,
+            type,
+        });
+        console.log(response.data);
+    } catch (error) {
+        console.error('Error sending notification', error);
+    }
+};
+const RequestNotificationPermission = () => {
+    useEffect(() => {
+        messaging.onMessage((payload) => {
+            console.log("Message received: ", payload);
+            // Show notification or update UI based on incoming message
+        });
+    }, []);
+    
+    useEffect(() => {
+        // Request permission to show notifications
+        Notification.requestPermission()
+            .then((permission) => {
+                if (permission === "granted") {
+                    console.log("Notification permission granted.");
+                    // Get the token for push notifications
+                    messaging.getToken().then((currentToken) => {
+                        if (currentToken) {
+                            // Send token to backend to store
+                            console.log("FCM Token: ", currentToken);
+                            // For instance, save the token in MongoDB to manage subscriptions
+                        } else {
+                            console.log("No token available");
+                        }
+                    });
+                } else {
+                    console.log("Notification permission denied.");
+                }
+            });
+    }, []);
+
+    return null;
+};
+
+export default RequestNotificationPermission;
