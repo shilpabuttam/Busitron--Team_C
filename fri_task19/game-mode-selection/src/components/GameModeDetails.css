@@ -1,0 +1,38 @@
+
+
+.game-mode-detail {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  .game-mode-detail h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #ff6f61;
+  }
+  
+  .game-mode-detail p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  .game-mode-detail ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .game-mode-detail ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+  }

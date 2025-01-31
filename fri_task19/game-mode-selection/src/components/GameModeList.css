@@ -1,0 +1,47 @@
+
+.game-mode-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-mode-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-mode-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.game-mode-item h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #ff6f61;
+}
+
+.game-mode-item p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.game-mode-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-mode-item ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+}
