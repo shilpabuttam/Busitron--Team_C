@@ -1,0 +1,90 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+.container1{
+  display: flex;
+  height:320px;
+  width: 600px;
+  flex-wrap: wrap;
+}
+.container1 div{
+  border:1px solid black;
+  height: 150px;
+  width: 153px;
+  text-align: center;
+  padding: 28px 18px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.container1 div:hover{
+  background-color:#B771E5;
+  height: 160px;
+  width: 160px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container1 div p{
+  font-size: small;
+  margin: 10px;
+}
+.mainContainer{
+  display: flex;
+}
+.firstContainer{
+  text-align: center;
+  margin: 50px
+}
+.firstContainer h2{
+  color:rgb(78, 78, 236);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size:xx-large;
+}
+.firstContainer p{
+  color: grey;
+  font-size: large;
+}
+.myContainer{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 50px;
+  padding: 20px;
+}
