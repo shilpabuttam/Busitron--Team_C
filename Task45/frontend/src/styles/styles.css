@@ -1,0 +1,82 @@
+.taskTitle{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: "Noto Sans Cuneiform", serif;
+    font-weight: 800;
+  
+}
+.App{
+    background-color: rgb(235, 44, 146);
+    margin: 20px;
+    border-radius: 10px;
+}
+.inviteTitle{
+    color: rgb(235, 44, 146);
+    font-size: 30px;
+    padding-left: 15px;
+    font-family: "Noto Sans Cuneiform", serif;
+    font-weight: 800;
+}
+.inviteInput{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border:2px solid rgb(235, 44, 146);
+}
+.reqButton{
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+.invites{
+    background-color: aliceblue;
+    width: 40%;
+    margin-left: 20px;
+    height: 160px;
+    border-radius: 10px;
+}
+.acceptButton{
+    background-color: green;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 3px 5px;
+}
+
+.rejectButton{
+    background-color: red;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 3px 5px;
+}
+
+.reqDesc{
+    padding: 8px;
+    color: black;
+    font-weight: 700;
+    font-family: "Noto Sans Cuneiform", serif;
+}
+.friendsList{
+    margin-left: 20px;
+}
+.notifyMsgs{
+    padding-left: 15px;
+}
+.notifyDivision{
+    background-color: aliceblue;
+    width: 30%;
+    margin-left: 20px;
+    height: 160px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.mainContainer{
+    display: flex;
+}
