@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a202c;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+
+/* Buttons Hover */
+button:hover {
+  background-color: #2b6cb0;
+}
+
+/* FPS Container */
+.fps {
+  background-color: #2d3748;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0px;
+}
+
+/* Optimized Image */
+img.optimized-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Container */
+.game-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.game-container .btn {
+  background-color: #38b2ac;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-container .btn:hover {
+  background-color: #319795;
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.game-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Ensure image does not get too large on wide screens */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Score and Button Layout */
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3182ce;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  width: 180px;
+  text-align: center;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Special Buttons for Different Functions */
+.next-btn {
+  background-color: #38a169;
+}
+
+.reset-btn {
+  background-color: #e53e3e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust headings and score containers on medium screens */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .score-container {
+    font-size: 1rem;
+    gap: 15px;
+  }
+
+  .game-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .game-image {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  button {
+    width: 150px; /* Adjust button size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile screens */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .score-container {
+    flex-direction: column; /* Stack score/level vertically */
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+  }
+
+  button {
+    width: 100%; /* Make buttons full width */
+  }
+
+  .game-image {
+    max-width: 300px; /* Adjust image size on small screens */
+  }
+}
